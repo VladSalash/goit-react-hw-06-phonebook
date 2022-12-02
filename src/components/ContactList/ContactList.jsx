@@ -14,7 +14,7 @@ const ContactList = () => {
   const renderContactList = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
-  console.log(deleteContact);
+
   return (
     <List>
       {renderContactList.map(({ id, name, number }) => {

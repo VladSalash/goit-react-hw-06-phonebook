@@ -16,7 +16,6 @@ function ContactForm() {
 
   const contacts = useSelector(state => state.contact.contacts);
   const dispatch = useDispatch();
-  console.log(contacts);
   const matchContact = contacts.find(contact => contact.name === name);
 
   const onNameChange = event => setName(event.target.value);
